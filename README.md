@@ -60,8 +60,21 @@
     [panos]
     panos1 ansible_host=192.168.122.131
 
-- Tree structure
+- git configuration
 ####
+    touch .gitignore
+    'venv' > .gitignore
+    echo 'venv' > .gitignore
+    pip freeze > requirements.txt
+    git init
+    git add . 
+    git commit -m "initial commit"
+    git remote add origin git@github.com:MVillate/ansible_basics.git
+    git remote -v
+    git push -u origin master
+
+- Tree structure
+    ####
     .
     ├── ansible.cfg
     ├── collections
@@ -70,8 +83,11 @@
     │   ├── ios.yml
     │   ├── panos.yml
     │   └── vyos.yml
+    ├── hosts.ini
     ├── host_vars
+    ├── pb_vyos_collect_facts.yml
     ├── README.md
+    ├── requirements.txt
     ├── run.py
     └── venv
         ├── bin
