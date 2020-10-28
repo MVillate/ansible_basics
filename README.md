@@ -74,4 +74,5 @@
     git push -u origin master
 
 - Tree structure
+
 ![Alt text](/images/tree.png?raw=true "Tree")
