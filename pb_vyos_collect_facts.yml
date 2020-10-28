@@ -1,0 +1,21 @@
+---
+    - name: "Play1: Collect facts"
+      hosts: vyos
+      connection: local
+      gather_facts: no 
+    
+      collections:
+        - paloaltonetworks.panos
+        - cisco.ios
+        - vyos.vyos
+    
+      tasks:
+        - name: "P1T1: Gather facts"
+          vyos_facts:
+            gather_subset:
+              - '!all'
+              - '!min'
+            gather_network_resources: all
+          register: device_facts
+
+        - debug: var=device_facts
