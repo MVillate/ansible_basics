@@ -23,7 +23,7 @@
 - Configuring ansible ansible.cfg
 ####
     [defaults]
-      interpreter_python= /home/manu/Documents/ansible/project1/venv/bin/python
+      interpreter_python= ./venv/bin/python
       collections_path=./collections
       inventory=hosts.ini
       host_key_checking=False
