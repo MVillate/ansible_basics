@@ -74,25 +74,4 @@
     git push -u origin master
 
 - Tree structure
-    ####
-    .
-    ├── ansible.cfg
-    ├── collections
-    │   └── ansible_collections
-    ├── group_vars
-    │   ├── ios.yml
-    │   ├── panos.yml
-    │   └── vyos.yml
-    ├── hosts.ini
-    ├── host_vars
-    ├── pb_vyos_collect_facts.yml
-    ├── README.md
-    ├── requirements.txt
-    ├── run.py
-    └── venv
-        ├── bin
-        ├── include
-        ├── lib
-        ├── lib64 -> lib
-        ├── pyvenv.cfg
-        └── share
+![Alt text](/images/tree.png?raw=true "Tree")
